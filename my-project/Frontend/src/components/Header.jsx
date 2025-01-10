@@ -28,7 +28,7 @@ export default function Header({ toggleCart, selecteditem }) {
       <div className="flex items-center space-x-2">
         <motion.img
           className="w-12 h-12 rounded-full border-2 border-white"
-          src={`http://localhost:5000/images/assets/logo.jpg`}
+          src="logo.jpg"
           alt="foodlogo"
           initial={{ rotateY: -360 }}
           animate={{ rotateY: 0 }}
@@ -44,7 +44,7 @@ export default function Header({ toggleCart, selecteditem }) {
         <motion.img
           onClick={() => toggleCart()}
           className="w-10 h-10 rounded-full border-2 border-white"
-          src={`http://localhost:5000/images/assets/cart.jpg`}
+          src="cart.jpg"
           alt="cartimg"
           whileHover={{ scale: 1.1 }}
           whileTap={{ rotate: 10 }}

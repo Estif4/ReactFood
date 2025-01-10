@@ -20,7 +20,7 @@ export default function Menu({
 
   async function fetchDatatocart(item) {
     try {
-      const response = await fetch("http://localhost:5000/cart", {
+      const response = await fetch("https://reactfood.onrender.com/cart", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -124,7 +124,7 @@ export default function Menu({
               whileTap={{ scale: 0.95 }}>
               <div className="relative w-full">
                 <img
-                  src={`http://localhost:5000/images/${item.image}`}
+                  src={`https://reactfood.onrender.com/${item.image}`}
                   alt={item.name}
                   className="w-full h-48 md:h-56 object-cover rounded-lg transform transition-transform duration-300 hover:scale-110"
                   onLoad={() => setIsLoaded(true)} // Set loaded state on image load
