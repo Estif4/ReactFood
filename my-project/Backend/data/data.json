@@ -1,0 +1,99 @@
+[
+    {
+      "id": 1,
+      "name": "Margeritipizza",
+      "image": "/assets/Margeritipizza.png",
+      "description": "Delicious Italian pizza with tomato, cheese, and fresh basil.",
+      "price": 12.99,
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "name": "Pancake",
+      "image": "/assets/pancake.jpeg",
+      "description": "Fluffy pancakes served with syrup and butter.",
+      "price": 8.99,
+      "quantity": 1
+    },
+    {
+      "id": 3,
+      "name": "Burger",
+      "image": "/assets/Burger.jpeg",
+      "description": "A cooked patty in a bun, topped with cheese, lettuce, and condiments.",
+      "price": 9.99,
+      "quantity": 1
+    },
+    {
+      "id": 4,
+      "name": "Roll Plater",
+      "image": "/assets/Rollplater.jpeg",
+      "description": "Assorted rolls with fillings like tuna, avocado, and more.",
+      "price": 14.99,
+      "quantity": 1
+    },
+    {
+      "id": 5,
+      "name": "Seafood",
+      "image": "/assets/seafood.jpeg",
+      "description": "Freshly cooked seafood platter with shrimp, lobster, and crab.",
+      "price": 22.99,
+      "quantity": 1
+    },
+    {
+      "id": 6,
+      "name": "Spaghetti",
+      "image": "/assets/sphageti.jpeg",
+      "description": "Classic spaghetti pasta with marinara sauce and meatballs.",
+      "price": 10.99,
+      "quantity": 1
+    },
+    {
+      "id": 7,
+      "name": "Steak Frites",
+      "image": "/assets/steakfrites.jpeg",
+      "description": "Juicy steak served with crispy fries.",
+      "price": 18.99,
+      "quantity": 1
+    },
+    {
+      "id": 8,
+      "name": "Vegan",
+      "image": "/assets/vegan.jpeg",
+      "description": "A healthy vegan meal with seasonal vegetables and grains.",
+      "price": 11.99,
+      "quantity": 1
+    },
+    {
+      "id": 9,
+      "name": "Spicy Chicken",
+      "image": "/assets/spicychicken.jpeg",
+      "description": "Grilled chicken with a spicy sauce and a side of vegetables.",
+      "price": 13.99,
+      "quantity": 1
+    },
+    {
+      "id": 10,
+      "name": "Cheeseburger",
+      "image": "assets/chesseburger.jpeg",
+      "description": "A juicy cheeseburger with lettuce, tomato, and a special sauce.",
+      "price": 10.99,
+      "quantity": 1
+    },
+    {
+      "id": 11,
+      "name": "Fish Tacos",
+      "image": "assets/fishtacos2.jpeg",
+      "description": "Soft tacos filled with grilled fish, cabbage slaw, and a tangy sauce.",
+      "price": 11.49,
+      "quantity": 1
+    },
+    {
+      "id": 12,
+      "name": "Mac and Cheese",
+      "image": "/assets/mackandchesse.png",
+      "description": "Creamy macaroni and cheese topped with breadcrumbs.",
+      "price": 7.99,
+      "quantity": 1
+    }
+  ]
+  
