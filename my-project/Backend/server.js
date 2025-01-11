@@ -9,7 +9,7 @@ const dataInit = require("./utils/datainit");
 const menuRoutes = require("./routes/menuroute");
 const cartroutes = require("./routes/cartroutes");
 const checkout = require("./routes/checkout");
-const nodemailer = require("nodemailer");
+
 
 dotenv.config();
 

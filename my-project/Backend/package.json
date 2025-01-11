@@ -5,19 +5,20 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev":"nodemon"
+    "dev": "nodemon"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@sendgrid/mail": "^8.1.4",
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "mailgun-js": "^0.22.0",
     "mongoose": "^8.9.3",
     "nodemailer": "^6.9.16",
     "nodemon": "^3.1.9"
   }
-  
 }
