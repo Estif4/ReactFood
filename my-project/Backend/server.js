@@ -16,7 +16,7 @@ dotenv.config();
 const { NODE_ENV, PORT, EMAIL_USER, EMAIL_PASS } = process.env; // Correctly load from .env
 
 const app = express();
-app.use("/images", express.static("./public"));
+app.use("/", express.static("./public"));
 app.use(express.json());
 app.use(cors());
 
@@ -62,9 +62,7 @@ app.use(cors());
 
 app.use("/menu", menuRoutes);
 app.use("/cart", cartroutes);
-app.use("/checkout",checkout);
-
-
+app.use("/checkout", checkout);
 
 dataInit();
 connectDB();
