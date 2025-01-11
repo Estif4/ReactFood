@@ -16,7 +16,7 @@ export default function Menu({
   const opacityY = useTransform(scrollY, [0, 300], [1, 0]);
 
   const textscale = useTransform(scrollY, [0, 50], [1, 1.5]);
-  const ymove=useTransform(scrollY, [0, 100], [0, 50]);
+  const ymove = useTransform(scrollY, [0, 100], [0, 50]);
 
   async function fetchDatatocart(item) {
     try {
@@ -87,13 +87,13 @@ export default function Menu({
         exit={{ opacity: 0, y: -20 }} // Exit animation
         transition={{ duration: 1, ease: "easeOut" }}
         className="text-3xl font-bold text-green-800 mb-8"
-        style={{ opacity: opacityY, scale: textscale,y:ymove }}>
+        style={{ opacity: opacityY, scale: textscale, y: ymove }}>
         Explore Our Menu
       </motion.h1>
 
       {/* Menu Grid */}
       <motion.div
-        className="grid grid-cols-3 gap-8 w-full max-w-6xl"
+        className="grid grid-cols-2 sm:grid-cols-3 gap-8 w-full max-w-6xl"
         initial="hidden"
         animate="visible"
         variants={{
