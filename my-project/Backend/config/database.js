@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const connectDB = async () => {
 
     await mongoose.connect(process.env.DATABASE.replace("<db_password>", process.env.DATABASE_PASSWORD),{
-      serverSelectionTimeoutMS: 30000,
+      serverSelectionTimeoutMS: 10000,
     })
     .then(()=>console.log(`Database connected`))
    .catch( (err) =>{
