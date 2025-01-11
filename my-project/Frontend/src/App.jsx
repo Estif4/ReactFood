@@ -28,7 +28,7 @@ function App() {
   useEffect(() => {
     async function fetchcartData() {
       try {
-        const response = await fetch("https://reactfood-1.onrender.com/cart");
+        const response = await fetch("https://reactfood.onrender.com/cart");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -49,7 +49,7 @@ function App() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch("https://reactfood-1.onrender.com/menu");
+        const response = await fetch("https://reactfood.onrender.com/menu");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
