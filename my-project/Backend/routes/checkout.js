@@ -4,14 +4,13 @@ const cartdata = require("../model/cart");
 const router = express.Router();
 const nodemailer = require("nodemailer");
 
-// Create a transporter object
+// Configure Nodemailer transporter with Mailtrap SMTP settings
 const transporter = nodemailer.createTransport({
   host: "live.smtp.mailtrap.io",
-  port: 587,
-  secure: false, // use SSL
+  port: 587, // Recommended port
   auth: {
-    user: "estifk2@gmail.com",
-    pass: "estifbezamahi",
+    user: "smtp@mailtrap.io", // Your Mailtrap username
+    pass: "aeaa503228931de922838f666919f4c7", 
   },
 });
 
@@ -20,13 +19,7 @@ router.post("/", async (req, res) => {
   const { data, totPrice } = req.body;
 
   // Validate the input data
-  if (
-    !data ||
-    !data.fullname ||
-    !data.email ||
-    !data.postalcode ||
-    !data.city
-  ) {
+  if (!data || !data.fullname || !data.email || !data.postalcode || !data.city) {
     return res.status(400).json({ message: "Missing required fields" });
   }
 
@@ -41,18 +34,18 @@ router.post("/", async (req, res) => {
     await cartdata.deleteMany({});
     const cartItems = await cartdata.find({});
 
-    // Prepare the email options
+    // Prepare the email
     const mailOptions = {
-      from: `${data.email}`,
-      to: "estifk2@gmail.com",
+      from: "estifk2.com", 
+      to: data.email, // Customer's email address
       subject: "Order Confirmation",
-      text: `Hello ${data.fullname},\n\nYour order has been placed successfully. Total price: ${totPrice}\n\nThank you for shopping with us!`,
+      text: `Hello ${data.fullname},\n\nYour order has been placed successfully. Total price: $${totPrice}.\n\nThank you for shopping with us!`,
     };
 
-    // Send the email
-    transporter.sendMail(mailOptions, function (error, info) {
+    // Send email using Nodemailer
+    transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
-        console.log("Error:", error);
+        console.error("Error sending email:", error);
       } else {
         console.log("Email sent:", info.response);
       }

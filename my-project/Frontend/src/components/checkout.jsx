@@ -46,7 +46,7 @@ export default function CheckOut({
 
     if (validation(formData, setErrors)) {
       try {
-        const response = await fetch("https://reactfood.onrender.com/checkout", {
+        const response = await fetch("http://localhost:4000/checkout", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ data: formData, totPrice }),
