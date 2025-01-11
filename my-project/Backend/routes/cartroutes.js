@@ -20,7 +20,7 @@ router.post("/", async (req, res) => {
         .status(409)
         .json({ message: "Item already added to the cart" });
     }
-
+    console.log("------------------------------");
     // Add new item to the cart
     const newCart = await cartdata.create(item);
 
@@ -47,11 +47,11 @@ router.patch("/:id", async (req, res) => {
     if (!quantity || quantity < 1) {
       await cartdata.deleteOne({ id: itemId });
       const updatedCart1 = await cartdata.find();
-      
+
       return res.status(200).json(updatedCart1);
     }
 
-    const updatedItem=await cartdata.findOneAndUpdate(
+    const updatedItem = await cartdata.findOneAndUpdate(
       { id: itemId },
       { quantity },
       { new: true }

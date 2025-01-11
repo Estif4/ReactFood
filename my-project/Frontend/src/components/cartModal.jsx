@@ -27,7 +27,7 @@ export default function Cart({
   async function syncQuantity(itemId, newQuantity) {
     setLoadingSync(true);
     try {
-      const response = await fetch(`https://reactfood.onrender.com/cart/${itemId}`, {
+      const response = await fetch(`https://reactfood-1.onrender.com/cart/${itemId}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ quantity: newQuantity }),

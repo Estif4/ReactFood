@@ -20,7 +20,7 @@ export default function Menu({
 
   async function fetchDatatocart(item) {
     try {
-      const response = await fetch("https://reactfood.onrender.com/cart", {
+      const response = await fetch("https://reactfood-1.onrender.com/cart", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

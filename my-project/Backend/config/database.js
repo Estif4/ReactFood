@@ -9,7 +9,7 @@ const connectDB = async () => {
         process.env.DATABASE_PASSWORD
       ),
       {
-        serverSelectionTimeoutMS: 20000,
+        serverSelectionTimeoutMS: 30000,
       }
     )
     .then(() => console.log(`Database connected`))
